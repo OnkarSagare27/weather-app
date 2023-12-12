@@ -1,11 +1,11 @@
-class Location {
+class LocationModel {
   final String name;
   final String state;
   final String country;
   final double lat;
   final double lon;
 
-  Location({
+  LocationModel({
     required this.name,
     required this.state,
     required this.country,
