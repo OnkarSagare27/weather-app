@@ -81,7 +81,10 @@ class _HomeScreenState extends State<HomeScreen> {
                               ),
                             ),
                             onPressed: () {},
-                            child: const SizedBox(),
+                            child: const Icon(
+                              Icons.info,
+                              color: Colors.transparent,
+                            ),
                           ),
                           OutlinedButton(
                             style: OutlinedButton.styleFrom(

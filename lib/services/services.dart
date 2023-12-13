@@ -26,7 +26,7 @@ Future<LocationModel> getCurrentLocation() async {
       },
     );
     Position position = await Geolocator.getCurrentPosition(
-      desiredAccuracy: LocationAccuracy.high,
+      desiredAccuracy: LocationAccuracy.low,
     );
     List<Placemark> placemarks =
         await placemarkFromCoordinates(position.latitude, position.longitude);
