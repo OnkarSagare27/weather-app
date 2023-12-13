@@ -92,7 +92,7 @@ class _SearchScreenState extends State<SearchScreen> {
                                   height: 20.h,
                                 ),
                                 Text(
-                                  'You can bookmark cities to access them from home screen quickly.',
+                                  'You can bookmark cities to access them from bookmark screen quickly.',
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                     color: Colors.white,
