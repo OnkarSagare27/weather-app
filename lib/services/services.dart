@@ -4,7 +4,7 @@ import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'package:permission_handler/permission_handler.dart';
-import 'package:weather/models/conts.dart';
+import 'package:weather/models/const.dart';
 import 'package:weather/models/location_model.dart';
 import 'package:weather/models/weather_model.dart';
 
@@ -55,7 +55,7 @@ Future<LocationModel> getCurrentLocation() async {
 Future<WeatherModel> getWeather(double lat, double lon) async {
   final uri = Uri.parse(
       'https://api.openweathermap.org/data/2.5/weather?lat=$lat&lon=$lon&lang=en&appid=${Strings.apiKey}');
-  print(uri);
+
   final res = await http.get(uri);
   if (res.statusCode == 200) {
     dynamic data = jsonDecode(const Utf8Decoder().convert(res.bodyBytes));
@@ -63,5 +63,32 @@ Future<WeatherModel> getWeather(double lat, double lon) async {
     return WeatherModel.fromJson(data);
   } else {
     throw Exception('Weather data not found. Status code: ${res.statusCode}');
+  }
+}
+
+// City search
+
+Future<List<LocationModel>> fetchCities(String input) async {
+  final uri = Uri.parse(
+      'http://api.openweathermap.org/geo/1.0/direct?q=$input&limit=5&appid=${Strings.apiKey}');
+
+  final res = await http.get(uri);
+  if (res.statusCode == 200) {
+    List<dynamic> data = jsonDecode(const Utf8Decoder().convert(res.bodyBytes));
+    List<LocationModel> modelsList = data
+        .map(
+          (city) => LocationModel(
+            name: city['name'],
+            state: city['state'],
+            country: city['country'],
+            lat: city['lat'],
+            lon: city['lon'],
+          ),
+        )
+        .toList();
+
+    return modelsList;
+  } else {
+    return [];
   }
 }

@@ -4,7 +4,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'package:weather/providers/weather_provider.dart';
+import 'package:weather/screens/bookmarks_scren.dart';
+import 'package:weather/screens/city_weather.dart';
 import 'package:weather/screens/home_sreen.dart';
+import 'package:weather/screens/info_screen.dart';
+import 'package:weather/screens/search_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -41,7 +45,10 @@ class MyApp extends StatelessWidget {
           initialRoute: 'home',
           routes: {
             'home': (context) => const HomeScreen(),
-            'search': (context) => const HomeScreen()
+            'search': (context) => const SearchScreen(),
+            'cityWeather': (context) => const CityWeatherScreen(),
+            'bookmarks': (context) => const BookmarksScreen(),
+            'info': (context) => const InfoScreen(),
           },
         ),
       ),
