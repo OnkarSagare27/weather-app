@@ -9,11 +9,14 @@
 https://github.com/OnkarSagare27/weather-app/assets/102476560/ade53192-c176-4676-9d57-b898e4d9451c
 
 
+## libs
 
-## Libs
+- **Provider:** State management.
 
-• Provider - State management\n
-• Shared preferences - To store data locally\n
-• Gelocator - To get users current cords\n
-• Geocoding - To get placemark from the specified cords\n
-• Permission handler - For permission handling\n
+- **Shared preferences:** To store data locally.
+
+- **Geolocator:** To get users current cords.
+
+- **Geocoding**: To get placemark from the specified cords.
+
+- **Permission handler**: For permission handling.
