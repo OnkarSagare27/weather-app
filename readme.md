@@ -21,13 +21,13 @@ https://github.com/OnkarSagare27/weather-app/assets/102476560/ade53192-c176-4676
 
 - **Permission handler**: For permission handling.
 
-## How do I run the app locally?
-- Fork this repo
-- Clone repo
+## How to run the app locally?
+- Fork the repo
+- Clone the repo
 ```sh
 git https://github.com/OnkarSagare27/weather-app.git
 ```
-- Install dependensies
+- Install dependencies
 ```sh
 flutter pub get
 ```
