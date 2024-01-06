@@ -1,4 +1,4 @@
-# A simple Weather application using in Flutter
+# A simple Weather application built using in Flutter
 
 - Fetches data from a REST API
 - Users can bookmark locations/cities
