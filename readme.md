@@ -1,7 +1,7 @@
-# A simple Weather application built in Flutter
+# A simple Weather application using in Flutter
 
-• Fetches data from a REST API
-• Users can bookmark locations/cities
+- Fetches data from a REST API
+- Users can bookmark locations/cities
 
 ## Demo
 
@@ -20,3 +20,15 @@ https://github.com/OnkarSagare27/weather-app/assets/102476560/ade53192-c176-4676
 - **Geocoding**: To get placemark from the specified cords.
 
 - **Permission handler**: For permission handling.
+
+## How do I run the app locally?
+- Fork this repo
+- Clone repo
+```sh
+git https://github.com/OnkarSagare27/weather-app.git
+```
+- Install dependensies
+```sh
+flutter pub get
+```
+- Debug ``main.dart`` on an emulator
