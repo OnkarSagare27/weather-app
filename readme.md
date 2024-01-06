@@ -4,7 +4,11 @@
 • Users can bookmark locations/cities
 
 ## Demo
-![](https://github.com/OnkarSagare27/weather-app/blob/master/demo/demo_comp.mp4)
+
+
+https://github.com/OnkarSagare27/weather-app/assets/102476560/ade53192-c176-4676-9d57-b898e4d9451c
+
+
 
 ## Libs
 
