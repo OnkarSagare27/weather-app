@@ -13,13 +13,13 @@ https://github.com/OnkarSagare27/weather-app/assets/102476560/ade53192-c176-4676
 
 - **Provider:** State management.
 
-- **Shared preferences:** To store data locally.
+- **Shared preferences:** To store the data locally.
 
-- **Geolocator:** To get users current cords.
+- **Geolocator:** To get the users current location cords (lat & lon).
 
-- **Geocoding**: To get placemark from the specified cords.
+- **Geocoding**: To get the placemark from the specified cords.
 
-- **Permission handler**: For permission handling.
+- **Permission handler**: Permission handling.
 
 ## How to run the app locally?
 - Fork the repo
