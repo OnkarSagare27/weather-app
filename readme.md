@@ -8,8 +8,8 @@
 
 ## Libs
 
-• Provier - State management
-• Shared preferences - To store data locally
-• Gelocator - To get users current cords
-• Geocoding - To get placemark from the specified cords
-• Permission handler - For permission handling
+• Provider - State management\n
+• Shared preferences - To store data locally\n
+• Gelocator - To get users current cords\n
+• Geocoding - To get placemark from the specified cords\n
+• Permission handler - For permission handling\n
