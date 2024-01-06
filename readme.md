@@ -1,1 +1,1 @@
-[![Watch the video](https://i.stack.imgur.com/Vp2cE.png)](https://youtu.be/vt5fpE0bzSY)
+![](https://github.com/OnkarSagare27/weather-app/blob/master/demo/demo_comp.mp4)
