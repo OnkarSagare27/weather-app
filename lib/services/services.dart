@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:geocoding/geocoding.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
@@ -48,7 +47,7 @@ Future<LocationModel> getCurrentLocation() async {
     }
     throw Exception('Location not found.');
   } catch (e) {
-    throw Exception('Location not found.');
+    throw Exception(e);
   }
 }
 
